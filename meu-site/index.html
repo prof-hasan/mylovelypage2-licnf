@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Story+Script&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Delícias dos sonhos</title>
+    <link rel="icon" href="imgs/icone.png">
+    <audio id="pageSound" src="page-flip1-178322.mp3" preload="auto"></audio>
+</head>
+
+<body>
+    <div id="menu-container">
+        <div class="menu-page active">
+            <h1 id="titulo"> O cardápio dos sonhos!</h1>
+            <p>Olá! Hoje eu vou apresentar à você as deliciosas refeições que são aqui servidas no CEFET!</p>
+            <p>Antes de começar, tenha certeza de ler o rodapé da página antes e também ao terminar de ver a página dê
+                um clique no prato ao lado ;)</p>
+            <p>Venha conferir as maravilhas gastronômicas que lhe aguardam durante a sua semana preciosa de estudos!
+                <br>
+                Cada dia uma nova surpresa para você e seu paladar e é claro, tudo pela pechincha de R$3,20 (ou 3,90 no
+                futuro)! Pegue seus talheres e venha antes que acabe! <br>
+            </p>
+            <p>Fora o prato dia, nosso menu também vem com os seguintes acompanhantes:</p>
+            <ul>
+                <li>Salada completa</li>
+                <li>Sucos e refrigerantes</li>
+                <li>Diversas frutas</li>
+                <li>Bolo e doces de sobremesa</li>
+            </ul>
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Página 1: Lagosta</h2>
+            <h3>Segunda-Feira</h3>
+            <p>Para começar bem a semana, apresento o prato da casa: Lagosta acompanhada de frutos do mar frescos,
+                pescados ano nosso próprio lago!<br>
+                Obviamente não se esqueça de antes de comer ter certeza de não ter nenhuma alergia, caso tenha avise-nos
+                que providenciaremos imediatamente uma substituição para você!</p>
+            <img class="menu" src="imgs/lagosta.avif">
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Página 2: Churrasco</h2>
+            <h3>Terça-Feira</h3>
+            <p>Já está cansado das suas aulas? tem aula té tarde? Não se preocupe pois nosso churrasco rústico vai te
+                dar energia até o final da semana!<br>
+                Picanha? Linguiça? Coração de galinha? Não importa qual a sua carne favorita, nosso churrasco tem de
+                tudo e do melhor!</p>
+            <img class="menu" src="imgs/churrasco.webp">
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Página 3: Massas</h2>
+            <h3>Quarta-Feira</h3>
+            <p>Para nossa quarta nós temos o nosso famoso "dia de massas" que deixaria qualquer italiano encantado e
+                desejando ser nosso aluno! <br>
+                Nossa cozinha vai preparar para vocês as melhores lasanhas, macarrões e massas que você vai ver em sua
+                vida, só cuidado com a dieta viu! </p>
+            <img class="menu" src="imgs/massas.webp">
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Página 4: Comida Japonesa</h2>
+            <h3>Quinta-Feira</h3>
+            <p>Gostaria de apresentar a todos os nossos estudantes nosso novo item do cardápio, comidas asiáticas!<br>
+                Nosso requintado restaurante agora conta com chefes asiáticos para prover do melhor para os nossos
+                estudantes! Seja sushi, lámen, rolinhos, nosso restaurante tem o
+                que você deseja!</p>
+            <img class="menu" src="imgs/culinaria-japonesa.jpg">
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Página 5: Rodízio de pizzas</h2>
+            <h3>Sexta-Feira</h3>
+            <p>E é claro que não posso deixar de falar do mais famoso dia da semana da nossa cozinha! Nosso rodízio de
+                pizzas do final da semana!<br>
+                Temos à sua disposição todos os sabores de pizza que você desejar, seja de pepperoni, portuguesa,
+                calabresa, de frango, desde que não seja de abacaxi nossa cozinha
+                tem lhe esperando!</p>
+            <img class="menu" src="imgs/pizzas.jpg">
+            <img src="imgs/seta.png" alt="Próxima página" class="seta" onclick="nextPage()">
+        </div>
+        <div class="menu-page">
+            <h2>Programação da semana</h2>
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr id="cabecalho">
+                        <th>Comida</th>
+                        <th>Nome</th>
+                        <th colspan="2">Dia da semana</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="imgs/prato-lagosta.png"></td>
+                        <td>Lagosta e frutos do mar</td>
+                        <td>Segunda-Feira</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/prato-churrasco.png"></td>
+                        <td>Churrasco</td>
+                        <td>Terça-Feira</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/prato-massas.png"></td>
+                        <td>Massas</td>
+                        <td>Quarta-Feira</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/prato-japones.png"></td>
+                        <td>Comida japonesa</td>
+                        <td>Quinta-Feira</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imgs/prato-pizzas.png"></td>
+                        <td>Rodízio de pizzas</td>
+                        <td>Sexta-Feira</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <a id="cefet" https://sig.cefetmg.br/sigaa/verTelaLogin.do">Agora que já sabe o que lhe espera para comer,
+                não se
+                esqueça de fazer as suas atividades!</a>
+            <img src="imgs/seta.png" alt="Voltar ao início" class="seta" onclick="goToFirstPage()">
+        </div>
+    </div>
+    <footer>
+        <p>Esse site não tem qualquer relação com a instituição CEFET e trata-se apenas de uma piada e nenhuma
+            informação deve ser realmente levada a sério © 2025 - Nícolas Eduardo</p>
+    </footer>
+    <div class="prato-container" onclick="levantarTampa()">
+        <img src="imgs/comida.png" alt="Prato de comida" class="prato">
+        <img src="imgs/tampa.png" alt="Tampa metálica" class="tampa" id="tampa">
+        <div class="fumaca" id="fumaca">
+            <img src="imgs/fumaça.png" alt="Fumaça">
+            <div class="fumaca-links">
+                <a href="cozinha.html">Nossa cozinha</a>
+                <a href="sobre.html">Sobre o site</a>
+                <a href="biohazard.html">Biohazard</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
